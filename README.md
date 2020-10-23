@@ -1,0 +1,2 @@
+# learnts
+Aprendendo sobre TypeScript
