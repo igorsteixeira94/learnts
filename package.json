@@ -1,0 +1,16 @@
+{
+  "name": "learnts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:igorsteixeira94/learnts.git",
+  "author": "Igor Rodrigues <igorsteixeira94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build":"tsc",
+    "dev": "ts-node-dev --quiet --respawn --ignore-watch node_modules --transpile-only src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.3"
+  }
+}
