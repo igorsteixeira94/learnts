@@ -1,1 +1,7 @@
-import './basicTypes';
+//import './basicTypes';
+// import './interfaces';
+ import './typealias';
+
+
+
+
