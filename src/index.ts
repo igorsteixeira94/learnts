@@ -1,7 +1,8 @@
 //import './basicTypes';
 // import './interfaces';
- import './typealias';
+// import './typealias';
+//import './Classes/Conta';
 
-
+import './Classes/Pessoa'
 
 
