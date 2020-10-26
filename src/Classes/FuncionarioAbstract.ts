@@ -13,6 +13,8 @@ abstract class Funcionario{
 
 }
 
+//Classe que herda Funcionario e implementa interface LoginFuncionario
+
 class Gerente extends Funcionario implements LoginFuncionario{
   protected salario:number;
   protected meta:number;
@@ -27,6 +29,7 @@ class Gerente extends Funcionario implements LoginFuncionario{
   }
 }
 
+//Classe que herda Funcionario e implementa interface LoginFuncionario
 class Presidente extends Funcionario implements LoginFuncionario{
   // seus atributos.
   constructor(nome:string, endereco:string){
@@ -41,6 +44,7 @@ class Presidente extends Funcionario implements LoginFuncionario{
 
 const presi = new Presidente('Igor','45');
 
+//Polimorfismo agora com Interface!
 function autentica(U:LoginFuncionario){
 
 }

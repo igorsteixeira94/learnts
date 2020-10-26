@@ -12,6 +12,7 @@ class Pessoa{
   }
 }
 
+//Classe que herda Pessoa
 class Fisica extends Pessoa{
   cpf:string;
 
@@ -19,12 +20,14 @@ class Fisica extends Pessoa{
     super(nomeCompleto,endereco);
     this.cpf = cpf;
   }
+  //reescrita de método
   autentica(){
     super.autentica();
     console.log(`Senha: ${this.cpf}XX`);
   }
 }
 
+// Classe Juridica herda de Pessoa.
 class Juridica extends Pessoa{
   cnpj:string;
 
@@ -41,6 +44,13 @@ const p2 = new Juridica('Corporação IR', 'Rua B','0000000000000');
 console.log(p1.nome);
 console.log(p2.nome);
 p1.autentica();
+
+//Polimorfismo
+
+
+function contrata(contratado:Fisica | Juridica){
+  console.log(`${contratado.nome}, você é o mais novo contratado`);
+}
 
 function contrata(contratado:Pessoa){
   console.log(`${contratado.nome}, você é o mais novo contratado`);

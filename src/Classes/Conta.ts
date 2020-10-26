@@ -1,3 +1,5 @@
+//Aprendendo um pouco sobre classes
+
 class Conta{
   //atributos
   private static totalContas = 0;
